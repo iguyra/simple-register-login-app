@@ -9,10 +9,10 @@ import Router from "next/router";
 
 const register = () => {
   const [inputField, setInputField] = useState({
-    fullName: "wes des",
-    email: "jon@gmail.com",
-    password: "xxxxxx",
-    passwordConfirm: "xxxxxx",
+    fullName: "",
+    email: "",
+    password: "",
+    passwordConfirm: "",
   });
   const [isLogging, setIsLogging] = useState(false);
   const [isError, setIsError] = useState(false);
