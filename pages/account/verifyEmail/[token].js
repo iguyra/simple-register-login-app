@@ -46,8 +46,6 @@ export async function getServerSideProps(context) {
       props: { success: data.success },
     };
   } catch (err) {
-    console.log(err);
-    console.log(err.response);
     return {
       props: { success: false },
     };

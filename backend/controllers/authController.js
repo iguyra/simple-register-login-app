@@ -97,8 +97,7 @@ exports.signup = catchAsync(async (req, res, next) => {
     });
   } catch (err) {
     //send error mdg to the client
-    console.log(err);
-    console.log(err.response);
+
     return next(new AppError("there was an error , try again later", 500));
   }
 });
