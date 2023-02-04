@@ -6,8 +6,6 @@ import URLbaseAPI from "../../../utils/URLbaseAPI";
 import Router from "next/router";
 
 const verifyEmail = ({ success }) => {
-  console.log(success);
-
   return (
     <Layout>
       <div className="login">
@@ -35,18 +33,14 @@ const verifyEmail = ({ success }) => {
 };
 
 export async function getServerSideProps(context) {
-  console.log("from async");
   const { req, res } = context;
 
   let token = context.params.token;
 
-  console.log("req params token", token);
   try {
     const { data } = await axios.post(
       `${URLbaseAPI}/api/users/verifyEmail/${token}`
     );
-
-    console.log(data);
 
     return {
       props: { success: data.success },

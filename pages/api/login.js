@@ -16,10 +16,6 @@ export default (req, res) => {
     (user) => user.email === email && password === user.password
   );
 
-  console.log(req.body, "BODY");
-
-  console.log(user, "USER");
-
   if (!email || !password) {
     const message = "please type credientials";
     return returnError(res, message, 401);

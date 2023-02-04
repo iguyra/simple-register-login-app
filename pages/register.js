@@ -54,25 +54,18 @@ const register = () => {
         JSON.stringify(data.registeredUsers)
       );
 
-      console.log(data);
       setIsLogging(false);
       setIsSubmitted(true);
       setSubmittedMsg(data.message);
-      // Router.push("/login");
       setTimeout(() => {
         Router.push("/login");
       }, 3000);
     } catch (err) {
       setIsLogging(false);
 
-      console.log(err);
-
-      // setIsSubmitted(false);
-      // setErMsg(er.response.data.message);
       setIsError(true);
       let errMsg = err.response?.data?.msg || "something went wrong, try again";
 
-      console.log(errMsg);
       setErMsg(errMsg);
     }
   };

@@ -15,8 +15,6 @@ export default (req, res) => {
   //check if email already in the databse
   const user = registeredUsers.find((user) => user.email === email);
 
-  console.log(req.body);
-
   if (user) {
     const message = "email already exist, try again";
     return returnError(res, message, 401);
@@ -41,7 +39,6 @@ export default (req, res) => {
   });
 
   registeredUsers.push(newUser);
-  console.log(registeredUsers, "newUser");
 
   try {
     res.status(200).json({

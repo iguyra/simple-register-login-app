@@ -88,7 +88,6 @@ exports.signup = catchAsync(async (req, res, next) => {
   });
 
   await newUser.save({ validateBeforeSave: false });
-  console.log(newUser, "newUser");
 
   try {
     res.status(200).json({
@@ -134,7 +133,6 @@ exports.login = catchAsync(async (req, res, next) => {
     return next(new AppError(message, 400));
   }
 
-  console.log("user", user);
   // createSendTokenn(user, 201, res, "token");
   return res.status(200).json({
     success: true,

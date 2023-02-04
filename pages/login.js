@@ -40,8 +40,6 @@ const login = () => {
         registeredUsers: registeredUsers || [],
       });
 
-      console.log(data, " LOGIN DATA");
-
       setIsLogged(true);
       localStorage.setItem("user", JSON.stringify(data.user));
       setUser(data.user);
@@ -53,11 +51,7 @@ const login = () => {
     } catch (err) {
       setIsLogged(false);
 
-      // console.log(err);
-
       let errMsg = err.response?.data?.msg || "something went wrong, try again";
-
-      console.log(errMsg);
 
       setIsLogging(false);
       setIsError(true);
