@@ -1,0 +1,53 @@
+h1 {
+  margin: 0 auto;
+  text-align: center;
+
+  @media only screen and ( min-width: 780px ) {
+    font-size: 6rem;
+  }
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+// body {
+//   background: #000;
+// }
+
+// canvas {
+//   display: block;
+// }
+
+// canvas {
+//   display: block;
+//   height: 100%;
+//   left: 0;
+//   margin: 0;
+//   padding: 0;
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+// }
+
+// p {
+//   font-size: 12px;
+//   margin: 0 0 5px;
+// }
+
+// label {
+//   font-size: 12px;
+//   font-weight: bold;
+// }
+
+// button {
+//   display: block;
+//   margin: 10px 0 5px;
+// }
+
+// a {
+//   border-bottom: 1px dotted #444;
+//   color: #fff;
+//   font-size: 12px;
+//   text-decoration: none;
+// }

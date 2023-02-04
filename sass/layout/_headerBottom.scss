@@ -1,0 +1,77 @@
+.headerBottom {
+  // background-color: #16181d;
+  text-align: center;
+  padding-top: 10rem;
+  background-image: url("/static/download.png");
+
+  img {
+    width: 30%;
+  }
+
+  @media only screen and ( min-width: 768px ) {
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
+  }
+
+  &__details {
+    color: white;
+    font-size: 3.6rem;
+    text-shadow: 0.1rem 0.2rem $color-primary;
+
+    @media only screen and ( min-width: 768px ) {
+      font-size: 4rem;
+    }
+  }
+
+  &__phrase {
+    color: $color-primary;
+
+    @media only screen and ( min-width: 768px ) {
+      font-size: 3rem;
+    }
+  }
+
+  &__start {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 4rem;
+
+    @media only screen and ( min-width: 768px ) {
+      margin-top: 0rem;
+      padding: 0;
+      // margin-left: 20rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__action {
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    padding: 4rem;
+
+    &--link {
+      text-decoration: none;
+      color: green;
+      font-weight: 600;
+      border: 5px solid #ccc;
+      padding: 1rem;
+      text-transform: uppercase;
+      transition: all 0.25s;
+      cursor: pointer;
+      background-color: #fff;
+
+      &:hover {
+        background-color: green;
+        transition: all 0.25s;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../abstracts/variables";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+::-webkit-scrollbar {
+  height: 6px; /* height of horizontal scrollbar ← You're missing this */
+  width: 4px;
+  border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: $color-primary;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  // font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #16181d;
+  background-image: url("/static/body-bg.png");
+  line-height: 1.63;
+  color: #a1abbd;
+}
+
+a {
+  text-decoration: none;
+  // color: $color-base;
+}
+
+h1 {
+  color: white;
+}
+
+h4 {
+  border-left: 2rem solid $color-primary;
+}
+
+h6 {
+  font-size: 1.6rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.MyApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button {
+  outline: 0 !important;
+  transition: all 0.25s;
+  &:active,
+  &:hover {
+    transition: all 0.25s;
+
+    outline: $color-primary;
+  }
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+}

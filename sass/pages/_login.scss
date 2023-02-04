@@ -1,0 +1,63 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: $color-grey-light-1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  // background: linear-gradient(
+  //   to right,
+  //   rgba(255, 0, 0, 0.111),
+  //   rgba(255, 255, 0, 0.185),
+  //   rgba(0, 128, 0, 0.226)
+  // );
+
+  // background-image: url("/static/banner.jpg");
+
+  &__flex {
+    @media only screen and ( min-width: 1000px ) {
+      display: flex;
+    }
+  }
+
+  &__container {
+    padding-top: 10rem;
+    width: 80%;
+    // background-color: $color-base;
+
+    &.verifyDash {
+      margin: 0 auto;
+    }
+
+    &.dashboard {
+      // margin: 0 auto;
+      @media only screen and ( min-width: 600px ) {
+        margin-left: auto;
+        width: 60%;
+        background-color: $color-base;
+        border: 1px solid $color-primary-light;
+      }
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  &__logword {
+    font-size: 3rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+.appear {
+  display: none;
+}

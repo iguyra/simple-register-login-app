@@ -1,0 +1,60 @@
+.fas {
+  color: #f39c12;
+  font-size: 2rem;
+  transition: all 0.25s;
+}
+
+.fab {
+  font-size: 20rem;
+  color: #f39c12;
+}
+.fa-plus {
+  font-size: 1.6rem;
+}
+.social {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+
+.icon {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.fab-nav {
+  font-size: 10rem;
+}
+
+.regIcon {
+  font-size: 1.4rem;
+  color: $color-bc;
+}
+
+.fa-paper-plane {
+  color: $color-primary;
+}
+
+.fas.active {
+  transform: rotate(90deg);
+  transition: all 0.25s;
+}
+.fa-chart-pie {
+}
+
+.dashboardIcon {
+  font-size: 150%;
+}
+
+.thankYou {
+  margin: 0 auto;
+  &__icon {
+    width: 30%;
+  }
+}
+
+.whyIcon {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}

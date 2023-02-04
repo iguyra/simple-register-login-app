@@ -1,0 +1,19 @@
+.footer {
+  // background-image: url("/static/wave-mid.png");
+  background-color: transparent;
+  margin-top: 10rem;
+  &__allrights {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  &__socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__do {
+    font-size: 1.4rem;
+  }
+}

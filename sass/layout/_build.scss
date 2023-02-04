@@ -1,0 +1,72 @@
+.build {
+  padding: 5rem 0;
+  max-width: 120rem;
+  margin-top: 0;
+  width: 100%;
+  margin: 0 auto;
+
+  background-color: rgba(26, 25, 25, 0.055);
+  background-image: linear-gradient(
+      to bottom right,
+      $color-primary-light 60%,
+      rgba(0, 0, 255, 0.082)
+    ),
+    url("/static/banner.jpg");
+  object-fit: contain;
+
+  img {
+    max-height: 450px;
+  }
+
+  @media only screen and ( min-width: 1110px ) {
+    display: flex;
+    margin-left: 1rem;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  &__items {
+    margin-top: 3rem;
+  }
+
+  &__figure {
+    padding: 0.3rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $color-base;
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &:hover {
+      background-color: $color-white;
+      transition: all 0.25s;
+    }
+  }
+
+  &__list {
+    background-color: $color-primary-light;
+    display: flex;
+    align-items: center;
+    color: #c3c9d4;
+    width: 78;
+    // background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1rem 1rem;
+
+    background-image: linear-gradient(
+      to left,
+      $color-base,
+      $color-primary-light
+    );
+  }
+
+  &__stage {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

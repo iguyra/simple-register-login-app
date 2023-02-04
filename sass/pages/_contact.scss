@@ -1,0 +1,48 @@
+.section__contact {
+  padding-top: 10rem;
+}
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+  &__heading {
+    font-size: 2rem;
+
+    span {
+      display: block;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__context {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #333743;
+    line-height: 20px;
+  }
+
+  &__information {
+    @media only screen and ( min-width: $bp-small ) {
+      margin: 0 auto;
+      max-width: $bp-large;
+    }
+  }
+
+  &__details {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: #333743;
+    margin-bottom: 5rem;
+
+    span {
+      font-size: 1.2rem;
+      display: block;
+      margin-top: 1rem;
+      text-transform: lowercase;
+      letter-spacing: 2px;
+    }
+  }
+}
