@@ -59,7 +59,6 @@ function userObj(userObj) {
   this.fullName = userObj.fullName;
   this.password = userObj.password;
   this.passwordConfirm = userObj.passwordConfirm;
-  this.passwordConfirm = userObj.passwordConfirm;
 }
 
 const returnError = (res, msg, errorCode) => {
